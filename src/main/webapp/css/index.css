@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url('https://media.licdn.com/dms/image/v2/D5612AQGplp7JKG6Iiw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1673950361361?e=1758153600&v=beta&t=YrQDStl-4SYaNplS0fx6Iz2-1JY_pt8GQaPxrrgxw24');
+    padding: 30px;
+    color: #333;
+}
+
+/* Page title */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:#0080ff;
+}
+
+/* Budget text */
+h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #27ae60;
+}
+
+/* Add transaction link */
+a[href="/add"] {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    background-color: #0080ff;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a[href="/add"]:hover {
+    background-color: #2980b9;
+}
+
+/* Transaction table */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Edit/Delete links */
+td a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+td a:hover {
+    background-color: #ecf0f1;
+}
+.logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .logout-btn form {
+            display: inline;
+        }
+
+        .logout-btn input[type="submit"] {
+            background-color: #f44336;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-btn input[type="submit"]:hover {
+            background-color: #d32f2f;
+        }
